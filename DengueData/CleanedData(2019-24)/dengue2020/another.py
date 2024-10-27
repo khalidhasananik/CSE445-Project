@@ -274,7 +274,9 @@ def apply_conversion(df, unicode_converter):
 # select all columns
 def select_columns(df):
     # Remove the first 3 rows and select the 5th (index 4) and 10th (index 9) columns
-    return df.iloc[3:, [4, 9]]
+    # return df.iloc[3:, [4, 9]]
+    return df
+
 
 
 # Generate date sequence from 31-12-19 to 01-01-19 in reverse order
@@ -297,6 +299,8 @@ unicode_converter = Unicode()
 
 # Generate sheet names using dates (assuming number of sheets corresponds to number of days)
 sheet_dates = generate_dates("31-12-20", len(excel_file.sheet_names))
+
+# sheet_dates = generate_dates("31-12-20", 5)
 
 # Iterate over each sheet, convert the text, select 'E' and 'I' columns, and save the result
 # for idx, sheet_name in enumerate(excel_file.sheet_names):
