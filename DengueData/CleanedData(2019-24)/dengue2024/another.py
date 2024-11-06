@@ -6,7 +6,7 @@ class Util:
     @staticmethod
     def mb_strlen(text):
         return len(text)
-    
+
     @staticmethod
     def mbCharAt(text, index):
         return text[index]
@@ -51,9 +51,9 @@ class Unicode:
     #     'K': 'ক', 'L': 'খ', 'M': 'গ', 'N': 'ঘ', 'O': 'ঙ', 'P': 'চ', 'Q': 'ছ', 'R': 'জ', 'S': 'ঝ', 'T': 'ঞ',
     #     'U': 'ট', 'V': 'ঠ', 'W': 'ড', 'X': 'ঢ', 'Y': 'ণ', 'Z': 'ত', '_': 'থ', '`': 'দ', 'a': 'ধ', 'b': 'ন',
     #     'c': 'প', 'd': 'ফ', 'e': 'ব', 'f': 'ভ', 'g': 'ম', 'h': 'য', 'i': 'র', 'j': 'ল', 'k': 'শ', 'l': 'ষ', 'm': 'স', 'n': 'হ',
-    #     'o': 'ড়', 'p': 'ঢ়', 'q': 'য়', 'r': 'ৎ', 's': 'ং', 't': 'ঃ', 'u': 'ঁ', 
+    #     'o': 'ড়', 'p': 'ঢ়', 'q': 'য়', 'r': 'ৎ', 's': 'ং', 't': 'ঃ', 'u': 'ঁ',
     #     '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪', '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯',
-    #     'v': 'া', 'w': 'ি', 'x': 'ী', 'y': 'ু', 'z': 'ু', '“': 'ু', '–': 'ু', '~': 'ূ', 'ƒ': 'ূ', '‚': 'ূ', '„': 'ৃ', 
+    #     'v': 'া', 'w': 'ি', 'x': 'ী', 'y': 'ু', 'z': 'ু', '“': 'ু', '–': 'ু', '~': 'ূ', 'ƒ': 'ূ', '‚': 'ূ', '„': 'ৃ',
     #     '†': 'ে', '‡': 'ে', 'ˆ': 'ৈ', '‰': 'ৈ', 'Š': 'ৗ', '\\|': '।', '\\&': '্‌'
     # }
 
@@ -80,34 +80,34 @@ class Unicode:
 
     # Merged from main_char
     '|': '।', 'Ô': '‘', 'Õ': '’', 'Ò': '“', 'Ó': '”', 'ª¨': '্র্য',
-    '¤cÖ': 'ম্প্র', 'i¨': 'র‌্য', '²': 'ক্ষ্ম', '°': 'ক্ক', '±': 'ক্ট', 
-    '³': 'ক্ত', 'K¡': 'ক্ব', '¯Œ': 'স্ক্র', 'µ': 'ক্র', 'K¬': 'ক্ল', 
-    '¶': 'ক্ষ', '·': 'ক্স', '¸': 'গু', '»': 'গ্ধ', 'Mœ': 'গ্ন', 'M¥': 'গ্ম', 
-    'M­': 'গ্ল', 'Mªy': 'গ্রু', '¼': 'ঙ্ক', '•¶': 'ঙ্ক্ষ', '•L': 'ঙ্খ', 
-    '½': 'ঙ্গ', '•N': 'ঙ্ঘ', '”Q¡': 'চ্ছ্ব', '”P': 'চ্চ', '”Q': 'চ্ছ', 
-    '”T': 'চ্ঞ', '¾¡': 'জ্জ্ব', '¾': 'জ্জ', 'À': 'জ্ঝ', 'Á': 'জ্ঞ', 
-    'R¡': 'জ্ব', 'Â': 'ঞ্চ', 'Ã': 'ঞ্ছ', 'Ä': 'ঞ্জ', 'Å': 'ঞ্ঝ', 'Æ': 'ট্ট', 
-    'U¡': 'ট্ব', 'U¥': 'ট্ম', 'Ç': 'ড্ড', 'È': 'ণ্ট', 'É': 'ণ্ঠ', 'Ý': 'ন্স', 
-    'Ê': 'ণ্ড', 'š‘': 'ন্তু', 'Y^': 'ণ্ব', 'Ë¡': 'ত্ত্ব', 'Ë': 'ত্ত', 
-    'Ì': 'ত্থ', 'Zœ': 'ত্ন', 'Z¥': 'ত্ম', 'š—¡': 'ন্ত্ব', 'Z¡': 'ত্ব', 
-    '_¡': 'থ্ব', '˜M': 'দ্গ', '˜N': 'দ্ঘ', 'Ï': 'দ্দ', '×': 'দ্ধ', 
-    '˜¡': 'দ্ব', 'Ø': 'দ্ব', '™¢': 'দ্ভ', 'Ù': 'দ্ম', '`ª“': 'দ্রু', 
-    'aŸ': 'ধ্ব', 'a¥': 'ধ্ম', '›U': 'ন্ট', 'Ú': 'ন্ঠ', 'Û': 'ন্ড', 
-    'š¿': 'ন্ত্র', 'š—': 'ন্ত', '¯¿': 'স্ত্র', 'Î': 'ত্র', 'š’': 'ন্থ', 
-    '›`': 'ন্দ', '›Ø': 'ন্দ্ব', 'Ü': 'ন্ধ', 'bœ': 'ন্ন', 'š^': 'ন্ব', 
-    'b¥': 'ন্ম', 'Þ': 'প্ট', 'ß': 'প্ত', 'cœ': 'প্ন', 'à': 'প্প', 
-    'cø': 'প্ল', 'á': 'প্স', 'd¬': 'ফ্ল', 'â': 'ব্জ', 'ã': 'ব্দ', 
-    'ä': 'ব্ধ', 'eŸ': 'ব্ব', 'e­': 'ব্ল', 'å': 'ভ্র', 'gœ': 'ম্ন', 
-    '¤ú': 'ম্প', 'ç': 'ম্ফ', '¤^': 'ম্ব', '¤¢': 'ম্ভ', '¤£': 'ম্ভ্র', 
-    '¤§': 'ম্ম', '¤­': 'ম্ল', 'ª': '্র', 'i“': 'রু', 'iƒ': 'রূ', 
-    'é': 'ল্ক', 'ê': 'ল্গ', 'ë': 'ল্ট', 'ì': 'ল্ড', 'í': 'ল্প', 
-    'î': 'ল্ফ', 'j¦': 'ল্ব', 'j¥': 'ল্ম', 'jø': 'ল্ল', 'ï': 'শু', 
-    'ð': 'শ্চ', 'kœ': 'শ্ন', 'k¦': 'শ্ব', 'k¥': 'শ্ম', 'k­': 'শ্ল', 
-    '®‹': 'ষ্ক', '®Œ': 'ষ্ক্র', 'ó': 'ষ্ট', 'ô': 'ষ্ঠ', 'ò': 'ষ্ণ', 
-    '®ú': 'ষ্প', 'õ': 'ষ্ফ', '®§': 'ষ্ম', '¯‹': 'স্ক', '÷': 'স্ট', 
-    'ö': 'স্খ', '¯Í': 'স্ত', '¯‘': 'স্তু', '¯’': 'স্থ', 'mœ': 'স্ন', 
-    '¯ú': 'স্প', 'ù': 'স্ফ', '¯^': 'স্ব', '¯§': 'স্ম', '¯­': 'স্ল', 
-    'û': 'হু', 'nè': 'হ্ণ', 'nŸ': 'হ্ব', 'ý': 'হ্ন', 'þ': 'হ্ম', 
+    '¤cÖ': 'ম্প্র', 'i¨': 'র‌্য', '²': 'ক্ষ্ম', '°': 'ক্ক', '±': 'ক্ট',
+    '³': 'ক্ত', 'K¡': 'ক্ব', '¯Œ': 'স্ক্র', 'µ': 'ক্র', 'K¬': 'ক্ল',
+    '¶': 'ক্ষ', '·': 'ক্স', '¸': 'গু', '»': 'গ্ধ', 'Mœ': 'গ্ন', 'M¥': 'গ্ম',
+    'M­': 'গ্ল', 'Mªy': 'গ্রু', '¼': 'ঙ্ক', '•¶': 'ঙ্ক্ষ', '•L': 'ঙ্খ',
+    '½': 'ঙ্গ', '•N': 'ঙ্ঘ', '”Q¡': 'চ্ছ্ব', '”P': 'চ্চ', '”Q': 'চ্ছ',
+    '”T': 'চ্ঞ', '¾¡': 'জ্জ্ব', '¾': 'জ্জ', 'À': 'জ্ঝ', 'Á': 'জ্ঞ',
+    'R¡': 'জ্ব', 'Â': 'ঞ্চ', 'Ã': 'ঞ্ছ', 'Ä': 'ঞ্জ', 'Å': 'ঞ্ঝ', 'Æ': 'ট্ট',
+    'U¡': 'ট্ব', 'U¥': 'ট্ম', 'Ç': 'ড্ড', 'È': 'ণ্ট', 'É': 'ণ্ঠ', 'Ý': 'ন্স',
+    'Ê': 'ণ্ড', 'š‘': 'ন্তু', 'Y^': 'ণ্ব', 'Ë¡': 'ত্ত্ব', 'Ë': 'ত্ত',
+    'Ì': 'ত্থ', 'Zœ': 'ত্ন', 'Z¥': 'ত্ম', 'š—¡': 'ন্ত্ব', 'Z¡': 'ত্ব',
+    '_¡': 'থ্ব', '˜M': 'দ্গ', '˜N': 'দ্ঘ', 'Ï': 'দ্দ', '×': 'দ্ধ',
+    '˜¡': 'দ্ব', 'Ø': 'দ্ব', '™¢': 'দ্ভ', 'Ù': 'দ্ম', '`ª“': 'দ্রু',
+    'aŸ': 'ধ্ব', 'a¥': 'ধ্ম', '›U': 'ন্ট', 'Ú': 'ন্ঠ', 'Û': 'ন্ড',
+    'š¿': 'ন্ত্র', 'š—': 'ন্ত', '¯¿': 'স্ত্র', 'Î': 'ত্র', 'š’': 'ন্থ',
+    '›`': 'ন্দ', '›Ø': 'ন্দ্ব', 'Ü': 'ন্ধ', 'bœ': 'ন্ন', 'š^': 'ন্ব',
+    'b¥': 'ন্ম', 'Þ': 'প্ট', 'ß': 'প্ত', 'cœ': 'প্ন', 'à': 'প্প',
+    'cø': 'প্ল', 'á': 'প্স', 'd¬': 'ফ্ল', 'â': 'ব্জ', 'ã': 'ব্দ',
+    'ä': 'ব্ধ', 'eŸ': 'ব্ব', 'e­': 'ব্ল', 'å': 'ভ্র', 'gœ': 'ম্ন',
+    '¤ú': 'ম্প', 'ç': 'ম্ফ', '¤^': 'ম্ব', '¤¢': 'ম্ভ', '¤£': 'ম্ভ্র',
+    '¤§': 'ম্ম', '¤­': 'ম্ল', 'ª': '্র', 'i“': 'রু', 'iƒ': 'রূ',
+    'é': 'ল্ক', 'ê': 'ল্গ', 'ë': 'ল্ট', 'ì': 'ল্ড', 'í': 'ল্প',
+    'î': 'ল্ফ', 'j¦': 'ল্ব', 'j¥': 'ল্ম', 'jø': 'ল্ল', 'ï': 'শু',
+    'ð': 'শ্চ', 'kœ': 'শ্ন', 'k¦': 'শ্ব', 'k¥': 'শ্ম', 'k­': 'শ্ল',
+    '®‹': 'ষ্ক', '®Œ': 'ষ্ক্র', 'ó': 'ষ্ট', 'ô': 'ষ্ঠ', 'ò': 'ষ্ণ',
+    '®ú': 'ষ্প', 'õ': 'ষ্ফ', '®§': 'ষ্ম', '¯‹': 'স্ক', '÷': 'স্ট',
+    'ö': 'স্খ', '¯Í': 'স্ত', '¯‘': 'স্তু', '¯’': 'স্থ', 'mœ': 'স্ন',
+    '¯ú': 'স্প', 'ù': 'স্ফ', '¯^': 'স্ব', '¯§': 'স্ম', '¯­': 'স্ল',
+    'û': 'হু', 'nè': 'হ্ণ', 'nŸ': 'হ্ব', 'ý': 'হ্ন', 'þ': 'হ্ম',
     'n¬': 'হ্ল', 'ü': 'হৃ', '©': 'র্', '«': '্র', '¨': '্য', '&': '্'
 }
 
@@ -272,13 +272,24 @@ def apply_conversion(df, unicode_converter):
 #     return df.iloc[:, [4, 8]]  # Select the 5th (index 4) and 9th (index 8) columns
 
 # select all columns
+# def select_columns(df):
+#     # Remove the first 3 rows and select the 5th (index 4) and 10th (index 9) columns
+#     # return df.iloc[3:, [4, 9]]
+#     # return df
+#     # return df.iloc[:, [4, 8]]
+#     # c and g
+#     return df.iloc[:, [2, 6]]
+
 def select_columns(df):
-    # Remove the first 3 rows and select the 5th (index 4) and 10th (index 9) columns
-    # return df.iloc[3:, [4, 9]]
+    # Select columns using iloc
+    result = df.iloc[5:, [2, 6]]
+
+    # Fill the first value with ঢাকা
+    result.iloc[0, 0] = 'ঢাকা'
+
+    return result
+
     # return df
-    # return df.iloc[:, [4, 8]]
-    # c and g
-    return df.iloc[:, [2, 6]]
 
 
 # Generate date sequence from 31-12-19 to 01-01-19 in reverse order
@@ -300,47 +311,48 @@ excel_file = pd.ExcelFile(input_file)
 unicode_converter = Unicode()
 
 # Generate sheet names using dates (assuming number of sheets corresponds to number of days)
+
 sheet_dates = generate_dates("09-10-24", len(excel_file.sheet_names))
 
-# sheet_dates = generate_dates("09-10-24", 5)
+# sheet_dates = generate_dates("09-10-24", 2)
 
 # Iterate over each sheet, convert the text, select 'E' and 'I' columns, and save the result
 # for idx, sheet_name in enumerate(excel_file.sheet_names):
 #     # Read the current sheet into a DataFrame
 #     df = pd.read_excel(input_file, sheet_name=sheet_name)
-    
+
 #     # Apply Bijoy to Unicode conversion to the DataFrame
 #     df_converted = apply_conversion(df, unicode_converter)
-    
+
 #     # Select only the 'E' and 'I' columns (5th and 9th columns)
 #     df_selected = select_columns(df_converted)
-    
+
 #     # Define the output filename based on the generated dates
 #     # output_file = f"{sheet_dates[idx]}.xlsx"
-    
+
 #     output_file = f"{sheet_dates[idx].strftime('%Y-%m-%d')}.xlsx"
 
 #     # Save the selected columns and converted data to a new Excel file
 #     df_selected.to_excel(output_file, index=False)
-    
+
 #     print(f"Converted and saved {output_file}")
 
 for idx, sheet_name in enumerate(excel_file.sheet_names):
     # Read the current sheet into a DataFrame
     df = pd.read_excel(input_file, sheet_name=sheet_name)
-    
+
     # Apply Bijoy to Unicode conversion to the DataFrame
-    df_converted = apply_conversion(df, unicode_converter)
-    
+    # df_converted = apply_conversion(df, unicode_converter)
+
     # Select only the 'E' and 'I' columns (5th and 9th columns)
-    df_selected = select_columns(df_converted)
-    
+    df_selected = select_columns(df)
+
     # Define the output filename based on the generated dates in 'YYYY-MM-DD' format
     output_file = f"{sheet_dates[idx].strftime('%Y-%m-%d')}.xlsx"
-    
+
     # Save the selected columns and converted data to a new Excel file
     df_selected.to_excel(output_file, index=False)
-    
+
     print(f"Converted and saved {output_file}")
 
 
@@ -354,7 +366,7 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 #     @staticmethod
 #     def mb_strlen(text):
 #         return len(text)
-    
+
 #     @staticmethod
 #     def mbCharAt(text, index):
 #         return text[index]
@@ -399,9 +411,9 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 #         'K': 'ক', 'L': 'খ', 'M': 'গ', 'N': 'ঘ', 'O': 'ঙ', 'P': 'চ', 'Q': 'ছ', 'R': 'জ', 'S': 'ঝ', 'T': 'ঞ',
 #         'U': 'ট', 'V': 'ঠ', 'W': 'ড', 'X': 'ঢ', 'Y': 'ণ', 'Z': 'ত', '_': 'থ', '`': 'দ', 'a': 'ধ', 'b': 'ন',
 #         'c': 'প', 'd': 'ফ', 'e': 'ব', 'f': 'ভ', 'g': 'ম', 'h': 'য', 'i': 'র', 'j': 'ল', 'k': 'শ', 'l': 'ষ', 'm': 'স', 'n': 'হ',
-#         'o': 'ড়', 'p': 'ঢ়', 'q': 'য়', 'r': 'ৎ', 's': 'ং', 't': 'ঃ', 'u': 'ঁ', 
+#         'o': 'ড়', 'p': 'ঢ়', 'q': 'য়', 'r': 'ৎ', 's': 'ং', 't': 'ঃ', 'u': 'ঁ',
 #         '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪', '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯',
-#         'v': 'া', 'w': 'ি', 'x': 'ী', 'y': 'ু', 'z': 'ু', '“': 'ু', '–': 'ু', '~': 'ূ', 'ƒ': 'ূ', '‚': 'ূ', '„': 'ৃ', 
+#         'v': 'া', 'w': 'ি', 'x': 'ী', 'y': 'ু', 'z': 'ু', '“': 'ু', '–': 'ু', '~': 'ূ', 'ƒ': 'ূ', '‚': 'ূ', '„': 'ৃ',
 #         '†': 'ে', '‡': 'ে', 'ˆ': 'ৈ', '‰': 'ৈ', 'Š': 'ৗ', '\\|': '।', '\\&': '্‌'
 #     }
 
@@ -538,19 +550,19 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 # for idx, sheet_name in enumerate(excel_file.sheet_names):
 #     # Read the current sheet into a DataFrame
 #     df = pd.read_excel(input_file, sheet_name=sheet_name)
-    
+
 #     # Apply Bijoy to Unicode conversion to the DataFrame
 #     df_converted = apply_conversion(df, unicode_converter)
-    
+
 #     # Select only the 'E' and 'I' columns (5th and 9th columns)
 #     df_selected = select_columns(df_converted)
-    
+
 #     # Define the output filename based on the generated dates
 #     output_file = f"{sheet_dates[idx]}.xlsx"
-    
+
 #     # Save the selected columns and converted data to a new Excel file
 #     df_selected.to_excel(output_file, index=False)
-    
+
 #     print(f"Converted and saved {output_file}")
 
 # version 5
@@ -561,7 +573,7 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 #     @staticmethod
 #     def mb_strlen(text):
 #         return len(text)
-    
+
 #     @staticmethod
 #     def mbCharAt(text, index):
 #         return text[index]
@@ -606,9 +618,9 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 #         'K': 'ক', 'L': 'খ', 'M': 'গ', 'N': 'ঘ', 'O': 'ঙ', 'P': 'চ', 'Q': 'ছ', 'R': 'জ', 'S': 'ঝ', 'T': 'ঞ',
 #         'U': 'ট', 'V': 'ঠ', 'W': 'ড', 'X': 'ঢ', 'Y': 'ণ', 'Z': 'ত', '_': 'থ', '`': 'দ', 'a': 'ধ', 'b': 'ন',
 #         'c': 'প', 'd': 'ফ', 'e': 'ব', 'f': 'ভ', 'g': 'ম', 'h': 'য', 'i': 'র', 'j': 'ল', 'k': 'শ', 'l': 'ষ', 'm': 'স', 'n': 'হ',
-#         'o': 'ড়', 'p': 'ঢ়', 'q': 'য়', 'r': 'ৎ', 's': 'ং', 't': 'ঃ', 'u': 'ঁ', 
+#         'o': 'ড়', 'p': 'ঢ়', 'q': 'য়', 'r': 'ৎ', 's': 'ং', 't': 'ঃ', 'u': 'ঁ',
 #         '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪', '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯',
-#         'v': 'া', 'w': 'ি', 'x': 'ী', 'y': 'ু', 'z': 'ু', '“': 'ু', '–': 'ু', '~': 'ূ', 'ƒ': 'ূ', '‚': 'ূ', '„': 'ৃ', 
+#         'v': 'া', 'w': 'ি', 'x': 'ী', 'y': 'ু', 'z': 'ু', '“': 'ু', '–': 'ু', '~': 'ূ', 'ƒ': 'ূ', '‚': 'ূ', '„': 'ৃ',
 #         '†': 'ে', '‡': 'ে', 'ˆ': 'ৈ', '‰': 'ৈ', 'Š': 'ৗ', '\\|': '।', '\\&': '্‌'
 #     }
 
@@ -728,16 +740,16 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 # for idx, sheet_name in enumerate(excel_file.sheet_names, start=1):
 #     # Read the current sheet into a DataFrame
 #     df = pd.read_excel(input_file, sheet_name=sheet_name)
-    
+
 #     # Apply Bijoy to Unicode conversion to the DataFrame
 #     df_converted = apply_conversion(df, unicode_converter)
-    
+
 #     # Define the output filename
 #     output_file = f"sheet{idx}_unicode.xlsx"
-    
+
 #     # Save the converted DataFrame to a new Excel file
 #     df_converted.to_excel(output_file, index=False)
-    
+
 #     print(f"Converted and saved {output_file}")
 
 
@@ -749,7 +761,7 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 #     @staticmethod
 #     def mb_strlen(text):
 #         return len(text)
-    
+
 #     @staticmethod
 #     def mbCharAt(text, index):
 #         return text[index]
@@ -771,13 +783,13 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 
 #     preConversionMap = {
 #         ' +':' ',
-#         'yy':'y', 
-#         'vv':'v', 
-#         '­­':'­', 
-#         'y&':'y', 
-#         '„&':'„', 
-#         '‡u':'u‡', 
-#         'wu':'uw', 
+#         'yy':'y',
+#         'vv':'v',
+#         '­­':'­',
+#         'y&':'y',
+#         '„&':'„',
+#         '‡u':'u‡',
+#         'wu':'uw',
 #         ' ,':',',
 #         ' \\|':'\\|',
 #         '\\\\ ':'',
@@ -795,9 +807,9 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 #         'K': 'ক', 'L': 'খ', 'M': 'গ', 'N': 'ঘ', 'O': 'ঙ', 'P': 'চ', 'Q': 'ছ', 'R': 'জ', 'S': 'ঝ', 'T': 'ঞ',
 #         'U': 'ট', 'V': 'ঠ', 'W': 'ড', 'X': 'ঢ', 'Y': 'ণ', 'Z': 'ত', '_': 'থ', '`': 'দ', 'a': 'ধ', 'b': 'ন',
 #         'c': 'প', 'd': 'ফ', 'e': 'ব', 'f': 'ভ', 'g': 'ম', 'h': 'য', 'i': 'র', 'j': 'ল', 'k': 'শ', 'l': 'ষ', 'm': 'স', 'n': 'হ',
-#         'o': 'ড়', 'p': 'ঢ়', 'q': 'য়', 'r': 'ৎ', 's': 'ং', 't': 'ঃ', 'u': 'ঁ', 
+#         'o': 'ড়', 'p': 'ঢ়', 'q': 'য়', 'r': 'ৎ', 's': 'ং', 't': 'ঃ', 'u': 'ঁ',
 #         '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪', '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯',
-#         'v': 'া', 'w': 'ি', 'x': 'ী', 'y': 'ু', 'z': 'ু', '“': 'ু', '–': 'ু', '~': 'ূ', 'ƒ': 'ূ', '‚': 'ূ', '„': 'ৃ', 
+#         'v': 'া', 'w': 'ি', 'x': 'ী', 'y': 'ু', 'z': 'ু', '“': 'ু', '–': 'ু', '~': 'ূ', 'ƒ': 'ূ', '‚': 'ূ', '„': 'ৃ',
 #         '†': 'ে', '‡': 'ে', 'ˆ': 'ৈ', '‰': 'ৈ', 'Š': 'ৗ', '\\|': '।', '\\&': '্‌'
 #         # Add the rest of the characters from your conversionMap here...
 #     }
@@ -848,16 +860,16 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 # for idx, sheet_name in enumerate(excel_file.sheet_names, start=1):
 #     # Read the current sheet into a DataFrame
 #     df = pd.read_excel(input_file, sheet_name=sheet_name)
-    
+
 #     # Apply Bijoy to Unicode conversion to the DataFrame
 #     df_converted = apply_conversion(df, unicode_converter)
-    
+
 #     # Define the output filename
 #     output_file = f"sheet{idx}_unicode.xlsx"
-    
+
 #     # Save the converted DataFrame to a new Excel file
 #     df_converted.to_excel(output_file, index=False)
-    
+
 #     print(f"Converted and saved {output_file}")
 
 
@@ -871,14 +883,14 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 # def convert_bijoy_text(text):
 #     with open("bijoy_temp.txt", "w", encoding="utf-8") as f:
 #         f.write(text)
-    
+
 #     # Convert the temporary Bijoy text file to Unicode using the package's function
 #     convert_bijoy_to_unicode('bijoy_temp.txt', 'unicode_temp.txt')
 
 #     # Read back the converted text from the Unicode file
 #     with open("unicode_temp.txt", "r", encoding="utf-8") as f:
 #         unicode_text = f.read()
-    
+
 #     return unicode_text
 
 # # Function to apply the Bijoy to Unicode conversion to DataFrame cells
@@ -901,16 +913,16 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 # for idx, sheet_name in enumerate(excel_file.sheet_names, start=1):
 #     # Read the current sheet
 #     df = pd.read_excel(input_file, sheet_name=sheet_name)
-    
+
 #     # Apply Bijoy to Unicode conversion to all cells
 #     df = df.applymap(apply_conversion)
-    
+
 #     # Define the output filename (e.g., sheet1_unicode.xlsx, sheet2_unicode.xlsx, etc.)
 #     output_file = f"sheet{idx}_unicode.xlsx"
-    
+
 #     # Save the converted sheet as a new Excel file
 #     df.to_excel(output_file, index=False)
-    
+
 #     print(f"Converted and saved {output_file}")
 
 # version 2
@@ -948,16 +960,16 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 # for idx, sheet_name in enumerate(excel_file.sheet_names, start=1):
 #     # Read the current sheet
 #     df = pd.read_excel(input_file, sheet_name=sheet_name)
-    
+
 #     # Apply Bijoy to Unicode conversion to all cells
 #     df = df.applymap(convert_bijoy_to_unicode)
-    
+
 #     # Define the output filename (e.g., sheet1.xlsx, sheet2.xlsx, etc.)
 #     output_file = f"sheet{idx}_unicode.xlsx"
-    
+
 #     # Save the converted sheet as a new Excel file
 #     df.to_excel(output_file, index=False)
-    
+
 #     print(f"Converted and saved {output_file}")
 
 
@@ -974,10 +986,10 @@ for idx, sheet_name in enumerate(excel_file.sheet_names):
 # for idx, sheet_name in enumerate(excel_file.sheet_names, start=1):
 #     # Read each sheet into a DataFrame
 #     df = pd.read_excel(input_file, sheet_name=sheet_name)
-    
+
 #     # Define the output filename as sheet1.xlsx, sheet2.xlsx, etc.
 #     output_file = f"sheet{idx}.xlsx"
-    
+
 #     # Save the DataFrame to a new Excel file
 #     df.to_excel(output_file, index=False)
 
