@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Comparison</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .chart-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .model-name {
+            text-align: left;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Model Comparison</h1>
+
+    <div class="chart-container">
+        <canvas id="modelChart"></canvas>
+    </div>
+
+    <table id="modelTable">
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>R²</th>
+                <th>Mean Squared Error</th>
+                <th>RMSE</th>
+                <th>Coefficient of Variation of RMSE</th>
+                <th>Theil's U</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="model-name">Linear Regression</td>
+                <td>-0.479</td>
+                <td>12431281.79</td>
+                <td>3525.80</td>
+                <td>2.429</td>
+                <td>-10.313</td>
+            </tr>
+            <tr>
+                <td class="model-name">Decision Tree Regressor</td>
+                <td>0.042</td>
+                <td>7901367.56</td>
+                <td>2810.94</td>
+                <td>2.008</td>
+                <td>-18.179</td>
+            </tr>
+            <tr>
+                <td class="model-name">Random Forest Regressor</td>
+                <td>0.209</td>
+                <td>6525531.51</td>
+                <td>2554.51</td>
+                <td>1.825</td>
+                <td>-5.615</td>
+            </tr>
+            <tr>
+                <td class="model-name">K Nearest Neighbors Regressor</td>
+                <td>0.204</td>
+                <td>6562598.95</td>
+                <td>2561.76</td>
+                <td>1.830</td>
+                <td>-11.961</td>
+            </tr>
+            <tr>
+                <td class="model-name">XGBoost Regressor</td>
+                <td>0.219</td>
+                <td>6562049.24</td>
+                <td>2561.65</td>
+                <td>1.765</td>
+                <td>-8.524</td>
+            </tr>
+            <tr>
+                <td class="model-name">Gradient Boosting Regressor</td>
+                <td>0.152</td>
+                <td>7124463.50</td>
+                <td>2669.17</td>
+                <td>1.839</td>
+                <td>-6.501</td>
+            </tr>
+            <tr>
+                <td class="model-name">AdaBoost Regressor</td>
+                <td>0.193</td>
+                <td>6651169.92</td>
+                <td>2578.99</td>
+                <td>1.837</td>
+                <td>-2.515</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="button-container">
+        <button id="downloadBtn">Download Table as PNG</button>
+    </div>
+
+    <script>
+        // Data values for each model
+        const modelNames = [
+            'Linear Regression',
+            'Decision Tree',
+            'Random Forest',
+            'K Nearest Neighbors',
+            'XGBoost',
+            'Gradient Boosting',
+            'AdaBoost'
+        ];
+
+        const rSquared = [-0.479, 0.042, 0.209, 0.204, 0.219, 0.152, 0.193];
+        const mse = [12431281.79, 7901367.56, 6525531.51, 6562598.95, 6562049.24, 7124463.50, 6651169.92];
+        const rmse = [3525.80, 2810.94, 2554.51, 2561.76, 2561.65, 2669.17, 2578.99];
+
+        // Scale MSE and RMSE by 10^6 for better visualization
+        const scaledMSE = mse.map(value => value / 1e6);
+        const scaledRMSE = rmse.map(value => value / 1000);
+
+        // Chart.js configuration
+        const ctx = document.getElementById('modelChart').getContext('2d');
+        const modelData = {
+            labels: modelNames,
+            datasets: [
+                {
+                    label: 'R²',
+                    data: rSquared,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Scaled MSE (x10⁶)',
+                    data: scaledMSE,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Scaled RMSE (x1000)',
+                    data: scaledRMSE,
+                    backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                    borderColor: 'rgba(153, 102, 255, 1)',
+                    borderWidth: 1
+                }
+            ]
+        };
+
+        const config = {
+            type: 'bar',
+            data: modelData,
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        beginAtZero: true
+                    },
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        };
+
+        const modelChart = new Chart(ctx, config);
+
+        // Function to download the table as PNG
+        document.getElementById("downloadBtn").addEventListener("click", function () {
+            const table = document.getElementById("modelTable");
+
+            // Use html2canvas to capture the table as a PNG image
+            html2canvas(table).then(function (canvas) {
+                // Create a link to download the canvas as PNG
+                const link = document.createElement('a');
+                link.href = canvas.toDataURL("image/png");
+                link.download = 'model_comparison.png';
+                link.click();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
